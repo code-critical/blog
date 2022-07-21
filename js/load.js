@@ -1,5 +1,5 @@
 async function load() {
-    const response = await fetch("archive.json");
+    const response = await fetch("archive/data.json");
     const archive = await response.json();
 
     const posts = archive.posts;
@@ -11,7 +11,7 @@ async function load() {
         container.insertAdjacentHTML("afterbegin", 
         `   <div class="publication gwd-div-11m9">
                 <div class="date">${data.date}</div>
-                <div class="title">${data.title}</div>
+                <a href="${data.link}" class="title">${data.title}</a>
                 <div class="content">${data.content}</div>
             </div>
         `);

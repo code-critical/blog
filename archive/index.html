@@ -53,21 +53,49 @@
       width: 100%;
       overflow: auto;
     }
+    .gwd-div-1g6x {
+      left: 0%;
+      top: 0%;
+      width: 100%;
+      font-size: 30px;
+      font-family: Arial;
+      height: 30px;
+      font-weight: bold;
+      font-style: normal;
+      text-align: left;
+      overflow: visible;
+      padding: 0px 0px 10px;
+    }
+    .gwd-div-4l13 {
+      font-size: 18px;
+      height: 18px;
+      width: 100%;
+    }
+    @media (width: 1000px) and (height: 1000px) {}
   </style>
 </head>
 
 <body class="htmlNoPages">
   <script gwd-served-sizes="" type="application/json">["1000x1000"]</script>
-  <script type="text/javascript" src="js/load.js"></script>
+  <script type="text/javascript">
+    let params = new URLSearchParams(document.location.search);
+    let id = params.get("post");
+    console.log(id);
+  </script>
   <div class="container gwd-div-1tof">
     <div class="topbar-wrapper gwd-div-1j7l">
       <div class="left">
-        <a href="/">Home</a>
-        <a href="/">Contacts</a>
+        <a href="../">Home</a>
+        <a href="../">Contacts</a>
       </div>
     </div>
-    <div class="publication-archive-wrapper gwd-div-kgjg">
-        <!-- posts go here -->
+    <div class="publication-content-wrapper gwd-div-kgjg">
+      <div class="title gwd-div-1g6x">
+        I hate people, so should you.
+      </div>
+      <div class="date gwd-div-4l13">
+        11th July 2022
+      </div>
     </div>
   </div>
 </body>
